@@ -1,0 +1,53 @@
+# This CITATION.cff file was generated with cffinit.
+
+cff-version: 1.2.0
+title: 'OCDO/pldo: v0.0.1'
+message: >-
+  Please cite this ontology using the metadata from
+  "preferred-citation".
+type: software
+authors:
+  - given-names: Abril
+    family-names: Azocar Guzman
+    orcid: 'https://orcid.org/0000-0001-7564-7990'
+    email: a.azocar.guzman@fz-juelich.de
+    affiliation: Forschungszentrum Juelich (FZJ)
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.10806187
+    description: Version 0.0.1 of the ontology in Zenodo
+  - type: url
+    value: 'https://purls.helmholtz-metadaten.de/cmso/'
+    description: Ontology IRI
+repository-code: 'https://github.com/OCDO/pldo'
+abstract: >-
+  Plane Defect Ontology (PLDO) is an ontology that focuses on the description of planar defects in crystalline materials, including grain boundaries and stacking faults.
+keywords:
+  - ontology
+  - crystal structure
+  - computational materials science
+  - materials informatics
+  - semantics
+  - atomistic simulations
+  - crystallographic defects
+  - plane defects
+  - stacking faults
+  - grain boundaries
+license: CC-BY-4.0
+commit: 13392217814ca55382d1d4d59a5487ff891c9d4d
+version: v0.0.1
+date-released: '2024-03-11'
+preferred-citation:
+  authors:
+    - family-names: Azocar Guzman
+      given-names: Abril
+    - family-names: Menon
+      given-names: Sarath
+    - family-names: Hofmann
+      given-names: Volker
+    - family-names: Sandfeld
+      given-names: Stefan
+  title: "Plane Defect Ontology (PLDO)"
+  type: generic
+  year: 2024
+  url: https://purls.helmholtz-metadaten.de/cdos/pldo
