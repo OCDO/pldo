@@ -25,10 +25,9 @@ abstract: >-
 keywords:
   - ontology
   - crystal structure
-  - computational materials science
+  - materials science
   - materials informatics
   - semantics
-  - atomistic simulations
   - crystallographic defects
   - plane defects
   - stacking faults
