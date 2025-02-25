@@ -269,6 +269,26 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purls.helmholtz-metadaten.de/pldo/hasGrainBoundaryEnergy -->
+
+    <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/pldo/hasGrainBoundaryEnergy">
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/pldo/GrainBoundary"/>
+        <rdfs:range rdf:resource="http://purls.helmholtz-metadaten.de/pldo/GrainBoundaryEnergy"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has grain boundary energy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/hasStackingFaultEnergy -->
+
+    <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/pldo/hasStackingFaultEnergy">
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/pldo/StackingFault"/>
+        <rdfs:range rdf:resource="http://purls.helmholtz-metadaten.de/pldo/StackingFaultEnergy"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has stacking fault energy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/pldo/hasTiltComponent -->
 
     <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/pldo/hasTiltComponent">
@@ -362,6 +382,16 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purls.helmholtz-metadaten.de/pldo/hasStackingSequence -->
+
+    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/pldo/hasStackingSequence">
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/pldo/StackingFault"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has stacking sequence</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/pldo/macroscopicDegreesOfFreedom -->
 
     <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/pldo/macroscopicDegreesOfFreedom">
@@ -408,6 +438,33 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purls.helmholtz-metadaten.de/pldo/ExtrinsicStackingFault -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/pldo/ExtrinsicStackingFault">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/pldo/StackingFault"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extrinsic Stacking Fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/ExtrinsicStackingFaultEnergy -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/pldo/ExtrinsicStackingFaultEnergy">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/pldo/StackingFaultEnergy"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extrinsic Stacking Fault Energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/GeneralizedStackingFaultEnergy -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/pldo/GeneralizedStackingFaultEnergy">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/pldo/StackingFaultEnergy"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generalized Stacking Fault Energy</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/pldo/GrainBoundary -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/pldo/GrainBoundary">
@@ -415,6 +472,41 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A grain boundary is a planar defect that separates two crystals (or grains) of the same material.</obo:IAO_0000115>
         <rdfs:label>Grain Boundary</rdfs:label>
         <skos:altLabel>GB</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/GrainBoundaryEnergy -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/pldo/GrainBoundaryEnergy">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grain Boundary Energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/I1StackingFaultEnergy -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/pldo/I1StackingFaultEnergy">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/pldo/StackingFaultEnergy"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I1 Stacking Fault Energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/I2StackingFaultEnergy -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/pldo/I2StackingFaultEnergy">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/pldo/StackingFaultEnergy"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I2 Stacking Fault Energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/IntrinsicStackingFault -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/pldo/IntrinsicStackingFault">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/pldo/StackingFault"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intrinsic Stacking Fault</rdfs:label>
     </owl:Class>
     
 
@@ -462,6 +554,14 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purls.helmholtz-metadaten.de/pldo/StackingFaultEnergy -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/pldo/StackingFaultEnergy">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stacking Fault Energy</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/pldo/Surface -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/pldo/Surface">
@@ -491,6 +591,15 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000119>ISBN 978-94-007-4968-9</obo:IAO_0000119>
         <rdfs:label>Tilt Grain Boundary</rdfs:label>
         <skos:altLabel>Tilt Boundary</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/Twin-likeStackingFault -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/pldo/Twin-likeStackingFault">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/pldo/StackingFault"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twin-like Stacking Fault</rdfs:label>
     </owl:Class>
     
 
