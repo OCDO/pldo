@@ -1,6 +1,6 @@
 # Planar Defects Ontology (PLDO)
 
-Plane Defect Ontology (PLDP) is an ontology designed to describe planar defects in crystalline materials, such as grain boundaries and stacking faults, with a focus on their atomic-scale structure and properties.
+PLDO is an ontology designed to describe planar defects in crystalline materials, such as grain boundaries and stacking faults, with a focus on their atomic-scale structure and properties.
 
 * **Documentation:** https://ocdo.github.io/pldo/
 
