@@ -21,7 +21,7 @@ identifiers:
     description: Ontology IRI
 repository-code: 'https://github.com/OCDO/pldo'
 abstract: >-
-  Plane Defect Ontology (PLDO) is an ontology that focuses on the description of planar defects in crystalline materials, including grain boundaries and stacking faults.
+  Planar Defect Ontology (PLDO) is an ontology that focuses on the description of planar defects in crystalline materials, including grain boundaries and stacking faults.
 keywords:
   - ontology
   - crystal structure
@@ -40,13 +40,7 @@ preferred-citation:
   authors:
     - family-names: Azocar Guzman
       given-names: Abril
-    - family-names: Menon
-      given-names: Sarath
-    - family-names: Hofmann
-      given-names: Volker
-    - family-names: Sandfeld
-      given-names: Stefan
-  title: "Plane Defect Ontology (PLDO)"
+  title: "Planar Defect Ontology (PLDO)"
   type: generic
   year: 2024
-  url: https://purls.helmholtz-metadaten.de/cdos/pldo
+  url: https://doi.org/10.5281/zenodo.10806186
