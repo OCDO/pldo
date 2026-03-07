@@ -12,15 +12,18 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/">
     <owl:Ontology rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/">
-        <owl:versionIRI rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/v0.2.0"/>
+        <owl:versionIRI rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/v0.3.0"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-6776-1213"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-8933-0238"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-0698-4891"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-1604-5812"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-7564-7990"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-9560-4728"/>
         <terms:description>PLDO focuses on the description of planar defects in crystalline materials.</terms:description>
         <terms:title>Planar Defect Ontology (PLDO)</terms:title>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/OCDO/pldo</rdfs:seeAlso>
-        <owl:versionInfo>v0.2.0</owl:versionInfo>
-        <owl:priorVersion rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/v0.0.1"/>
+        <owl:priorVersion rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/v0.2.0"/>
+        <owl:versionInfo>v0.3.0</owl:versionInfo>
         <schema:citation>Abril Azocar Guzman and Stefan Sandfeld. (2025). Planar Defect Ontology.</schema:citation>
         <schema:creativeWorkStatus>Ontology Specification</schema:creativeWorkStatus>
         <schema:funder rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://ror.org/05qj6w324</schema:funder>
@@ -311,6 +314,18 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/hasStackingFaultEnergy -->
+
+    <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/hasStackingFaultEnergy">
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/ComputationalSample"/>
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/StackingFault"/>
+        <rdfs:range rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/StackingFaultEnergy"/>
+        <obo:IAO_0000115>The relation between a stacking fault and the corresponding energy.</obo:IAO_0000115>
+        <rdfs:label>has stacking fault energy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/hasSurfaceEnergy -->
 
     <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/hasSurfaceEnergy">
@@ -366,6 +381,18 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/hasDisplacementVector -->
+
+    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/hasDisplacementVector">
+        <rdfs:subPropertyOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/hasSFplane"/>
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/StackingFault"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>A data property indicating the displacement vector associated with the stacking fault.</obo:IAO_0000115>
+        <rdfs:label>has displacement vector</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/hasGBplane -->
 
     <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/hasGBplane">
@@ -404,6 +431,18 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/hasSFplane -->
+
+    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/hasSFplane">
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/StackingFault"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>A data property indicating the stacking fault (SF) plane using Miller indices.</obo:IAO_0000115>
+        <rdfs:comment>The SF plane defines the crystallographic plane along which a stacking fault occurs, disrupting the ideal stacking sequence of the crystal structure.</rdfs:comment>
+        <rdfs:label>has SF plane</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/hasSigmaValue -->
 
     <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/hasSigmaValue">
@@ -412,6 +451,17 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000115>A data property linking a GB with its sigma value.</obo:IAO_0000115>
         <rdfs:comment>Sigma value of a GB is the coincidence index, calculated as the ratio of the coincidence unit cell volume by the crystal primitive unit cell volume. The coincidence index refers to the Coincidence Site Lattice (CSL).</rdfs:comment>
         <rdfs:label>has sigma value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/hasStackingSequence -->
+
+    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/hasStackingSequence">
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/StackingFault"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>A data property indicating the stacking sequence in a crystal structure. For the ideal hcp structure, this sequence is •••ABABAB••• and for fcc •••ABCABC•••.</obo:IAO_0000115>
+        <rdfs:label>has stacking sequence</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -494,6 +544,26 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/ExtrinsicStackingFault -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/ExtrinsicStackingFault">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/StackingFault"/>
+        <obo:IAO_0000115>An extrinsic stacking fault is a stacking fault produced by the change in sequence resulting from the introduction of an extra layer.</obo:IAO_0000115>
+        <rdfs:label>Extrinsic Stacking Fault</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/ExtrinsicStackingFaultEnergy -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/ExtrinsicStackingFaultEnergy">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/StackingFaultEnergy"/>
+        <obo:IAO_0000115>Extrinsic stacking fault energy (ESFE) is the energy per unit area required to introduce an additional atomic plane into the regular stacking sequence of a crystal.</obo:IAO_0000115>
+        <rdfs:label>Extrinsic Stacking Fault Energy</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/Gamma-Surface -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/Gamma-Surface">
@@ -502,6 +572,17 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000115>The gamma-surface is the excess interlayer energy, γ, as a function of an imposed rigid-body translation, t, parallel to the interface.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1080/14786436808227500</obo:IAO_0000119>
         <rdfs:label>Gamma-Surface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/GeneralizedStackingFaultEnergy -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/GeneralizedStackingFaultEnergy">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/StackingFaultEnergy"/>
+        <obo:IAO_0000115>The generalized stacking fault energy (GSFE) is a measure of the energy penalty between two adjacent planes during shear deformation in a specific slip direction on a given slip plane, representing the nature of slip and involving the stable and unstable stacking and twin fault energies.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1016/j.actamat.2013.12.019</obo:IAO_0000119>
+        <rdfs:label>Generalized Stacking Fault Energy</rdfs:label>
     </owl:Class>
     
 
@@ -525,6 +606,58 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000115>Grain boundary energy is the excess energy due to the presence of a grain boundary, with the perfect lattice (bulk) as the reference.</obo:IAO_0000115>
         <rdfs:comment>Usually expressed in units of energy per area.</rdfs:comment>
         <rdfs:label>Grain Boundary Energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/I1StackingFault -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/I1StackingFault">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/IntrinsicStackingFault"/>
+        <obo:IAO_0000115>The I1 stacking fault, or growth fault, is a type of intrinsic stacking fault in hcp systems due to the removal of a plane above the B plane, and then shearing of the remaining planes above the B plane by the displacement 1/3[-1-100].</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1103/PhysRevB.56.10844</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/I1StackingFaultEnergy -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/I1StackingFaultEnergy">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/StackingFaultEnergy"/>
+        <obo:IAO_0000115>The I1 stacking fault, or growth fault, is a type of intrinsic stacking fault in hcp systems due to the removal of a plane above the B plane, and then shearing of the remaining planes above the B plane by the displacement 1/3[-1-100].</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1103/PhysRevB.56.10844</obo:IAO_0000119>
+        <rdfs:label>I1 Stacking Fault Energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/I2StackingFault -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/I2StackingFault">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/IntrinsicStackingFault"/>
+        <obo:IAO_0000115>The I2 stacking fault, or deformation fault, is a type of intrinsic stacking fault in hcp systems due to directly shearing the hcp lattice by the displacement 1/3[-1-100].</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1103/PhysRevB.56.10844</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/I2StackingFaultEnergy -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/I2StackingFaultEnergy">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/StackingFaultEnergy"/>
+        <obo:IAO_0000115>The I2 stacking fault, or deformation fault, is a type of intrinsic stacking fault in hcp systems due to directly shearing the hcp lattice by the displacement 1/3[-1-100].</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1103/PhysRevB.56.10844</obo:IAO_0000119>
+        <rdfs:label>I2 Stacking Fault Energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/IntrinsicStackingFault -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/IntrinsicStackingFault">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/StackingFault"/>
+        <obo:IAO_0000115>An intrinsic stacking fault is a stacking fault produced by the change in sequence resulting from the removal of an extra layer.</obo:IAO_0000115>
+        <rdfs:label>Intrinsic Stacking Fault</rdfs:label>
     </owl:Class>
     
 
@@ -578,6 +711,18 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/StackingFaultEnergy -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/StackingFaultEnergy">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/CalculatedProperty"/>
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/Energy"/>
+        <obo:IAO_0000115>Stacking fault energy is the excess energy due to the presence of a stacking fault, with the perfect lattice (bulk) as the reference.</obo:IAO_0000115>
+        <rdfs:comment>Usually expressed in units of energy per area.</rdfs:comment>
+        <rdfs:label>Stacking Fault Energy</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/Surface -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/Surface">
@@ -618,6 +763,16 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000119>ISBN 978-94-007-4968-9</obo:IAO_0000119>
         <rdfs:label>Tilt Grain Boundary</rdfs:label>
         <skos:altLabel>Tilt Boundary</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/Twin-likeStackingFault -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/Twin-likeStackingFault">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/StackingFault"/>
+        <obo:IAO_0000115>A twin-like stacking fault is a type of stacking fault that possesses mirror symmetry about the fault plane.</obo:IAO_0000115>
+        <rdfs:label>Twin-like Stacking Fault</rdfs:label>
     </owl:Class>
     
 
