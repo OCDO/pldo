@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purls.helmholtz-metadaten.de/pldo/"
-     xml:base="http://purls.helmholtz-metadaten.de/pldo/"
+<rdf:RDF xmlns="https://purls.helmholtz-metadaten.de/pldo/"
+     xml:base="https://purls.helmholtz-metadaten.de/pldo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -11,16 +11,16 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/">
-    <owl:Ontology rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/">
-        <owl:versionIRI rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/v0.2.0"/>
+    <owl:Ontology rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/">
+        <owl:versionIRI rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/v0.2.0"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-6776-1213"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-7564-7990"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-9560-4728"/>
         <terms:description>PLDO focuses on the description of planar defects in crystalline materials.</terms:description>
         <terms:title>Planar Defect Ontology (PLDO)</terms:title>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/OCDO/pldo</rdfs:seeAlso>
+        <owl:priorVersion rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/v0.0.1"/>
         <owl:versionInfo>v0.2.0</owl:versionInfo>
-        <owl:priorVersion rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/v0.0.1"/>
         <schema:citation>Abril Azocar Guzman and Stefan Sandfeld. (2025). Planar Defect Ontology.</schema:citation>
         <schema:creativeWorkStatus>Ontology Specification</schema:creativeWorkStatus>
         <schema:funder rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://ror.org/05qj6w324</schema:funder>
@@ -299,46 +299,46 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/hasGrainBoundaryEnergy -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/hasGrainBoundaryEnergy -->
 
-    <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/hasGrainBoundaryEnergy">
-        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/ComputationalSample"/>
-        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
-        <rdfs:range rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundaryEnergy"/>
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/hasGrainBoundaryEnergy">
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/ComputationalSample"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
+        <rdfs:range rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundaryEnergy"/>
         <obo:IAO_0000115>The relation between a grain boundary and the corresponding energy.</obo:IAO_0000115>
         <rdfs:label>has grain boundary energy</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/hasSurfaceEnergy -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/hasSurfaceEnergy -->
 
-    <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/hasSurfaceEnergy">
-        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/ComputationalSample"/>
-        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/Surface"/>
-        <rdfs:range rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/SurfaceEnergy"/>
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/hasSurfaceEnergy">
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/ComputationalSample"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/Surface"/>
+        <rdfs:range rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/SurfaceEnergy"/>
         <obo:IAO_0000115>The relation between a surface structure and the corresponding energy.</obo:IAO_0000115>
         <rdfs:label>has surface energy</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/hasTiltComponent -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/hasTiltComponent -->
 
-    <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/hasTiltComponent">
-        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/MixedGrainBoundary"/>
-        <rdfs:range rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/TiltGrainBoundary"/>
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/hasTiltComponent">
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/MixedGrainBoundary"/>
+        <rdfs:range rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/TiltGrainBoundary"/>
         <obo:IAO_0000115>The relation between a mixed grain boundary and the tilt grain boundary component.</obo:IAO_0000115>
         <rdfs:label>has tilt component</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/hasTwistComponent -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/hasTwistComponent -->
 
-    <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/hasTwistComponent">
-        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/MixedGrainBoundary"/>
-        <rdfs:range rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/TwistGrainBoundary"/>
+    <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/hasTwistComponent">
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/MixedGrainBoundary"/>
+        <rdfs:range rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/TwistGrainBoundary"/>
         <obo:IAO_0000115>The relation between a mixed grain boundary and the twist grain boundary component.</obo:IAO_0000115>
         <rdfs:label>has twist component</rdfs:label>
     </owl:ObjectProperty>
@@ -356,21 +356,21 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/geometricalDegreesOfFreedom -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/geometricalDegreesOfFreedom -->
 
-    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/geometricalDegreesOfFreedom">
-        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/geometricalDegreesOfFreedom">
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
         <obo:IAO_0000115>The geometrical degrees of freedom are the parameters that are necessary to characterize a grain boundary.</obo:IAO_0000115>
         <rdfs:label>geometrical degrees of freedom</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/hasGBplane -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/hasGBplane -->
 
-    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/hasGBplane">
-        <rdfs:subPropertyOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/macroscopicDegreesOfFreedom"/>
-        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/hasGBplane">
+        <rdfs:subPropertyOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/macroscopicDegreesOfFreedom"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <obo:IAO_0000115>A data property indicating the grain boundary (GB) plane using Miller indices.</obo:IAO_0000115>
         <rdfs:label>has GB plane</rdfs:label>
@@ -378,11 +378,11 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/hasMisorientationAngle -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/hasMisorientationAngle -->
 
-    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/hasMisorientationAngle">
-        <rdfs:subPropertyOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/macroscopicDegreesOfFreedom"/>
-        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/hasMisorientationAngle">
+        <rdfs:subPropertyOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/macroscopicDegreesOfFreedom"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <obo:IAO_0000115>A data property indicating the misorientation angle (θ) of the grains with respect to each other.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1016/j.actamat.2022.118006</obo:IAO_0000119>
@@ -392,11 +392,11 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/hasRotationAxis -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/hasRotationAxis -->
 
-    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/hasRotationAxis">
-        <rdfs:subPropertyOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/macroscopicDegreesOfFreedom"/>
-        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/hasRotationAxis">
+        <rdfs:subPropertyOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/macroscopicDegreesOfFreedom"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <obo:IAO_0000115>A data property indicating the rotation axis [uvw].</obo:IAO_0000115>
         <rdfs:label>has rotation axis</rdfs:label>
@@ -404,10 +404,10 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/hasSigmaValue -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/hasSigmaValue -->
 
-    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/hasSigmaValue">
-        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/hasSigmaValue">
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <obo:IAO_0000115>A data property linking a GB with its sigma value.</obo:IAO_0000115>
         <rdfs:comment>Sigma value of a GB is the coincidence index, calculated as the ratio of the coincidence unit cell volume by the crystal primitive unit cell volume. The coincidence index refers to the Coincidence Site Lattice (CSL).</rdfs:comment>
@@ -416,11 +416,11 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/macroscopicDegreesOfFreedom -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/macroscopicDegreesOfFreedom -->
 
-    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/macroscopicDegreesOfFreedom">
-        <rdfs:subPropertyOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/geometricalDegreesOfFreedom"/>
-        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/macroscopicDegreesOfFreedom">
+        <rdfs:subPropertyOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/geometricalDegreesOfFreedom"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
         <obo:IAO_0000115>There are five macroscopic degrees of freedom (DOFs) that are sufficient to describe the thermodynamic description of the grain boundary.</obo:IAO_0000115>
         <rdfs:comment>In simulations of grain boundaries, the macroscopic DOFs are imposed on the structure.</rdfs:comment>
         <rdfs:label>macroscopic degrees of freedom</rdfs:label>
@@ -428,11 +428,11 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/microscopicDegreesOfFreedom -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/microscopicDegreesOfFreedom -->
 
-    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/microscopicDegreesOfFreedom">
-        <rdfs:subPropertyOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/geometricalDegreesOfFreedom"/>
-        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
+    <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/microscopicDegreesOfFreedom">
+        <rdfs:subPropertyOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/geometricalDegreesOfFreedom"/>
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
         <obo:IAO_0000115>The microscopic degrees of freedom (DOFs) refer to the translation of one crystal with respect to the other at the microscopic scale. The microscopic parameters result from the relaxation process and are not independent of the macroscopic parameters.</obo:IAO_0000115>
         <rdfs:comment>In simulations of grain boundaries, the microscopic DOFs are obtained after the grain boundary energy minimization.</rdfs:comment>
         <rdfs:label>microscopic degrees of freedom</rdfs:label>
@@ -451,10 +451,10 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/AntiphaseBoundary -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/AntiphaseBoundary -->
 
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/AntiphaseBoundary">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/PlanarDefect"/>
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/AntiphaseBoundary">
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/PlanarDefect"/>
         <obo:IAO_0000115>An antiphase boundary is a planar defect that occurs in ordered alloys. The boundary separates two domains of the same ordered phase.</obo:IAO_0000115>
         <rdfs:label>Antiphase Boundary</rdfs:label>
         <skos:altLabel>APB</skos:altLabel>
@@ -462,28 +462,28 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/CalculatedProperty -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/CalculatedProperty -->
 
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/CalculatedProperty">
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/CalculatedProperty">
         <rdfs:label>Calculated Property</rdfs:label>
         <skos:definition>A calculated property is a property of a material resulting from a calculation or simulation.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/ComputationalSample -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/ComputationalSample -->
 
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/ComputationalSample">
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/ComputationalSample">
         <obo:IAO_0000115>A computational sample is a representative system of a material for analysis through computational methods in the context of materials science.</obo:IAO_0000115>
         <rdfs:label>Computational Sample</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/Energy -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/Energy -->
 
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/Energy">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/PhysicalQuantity"/>
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/Energy">
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/PhysicalQuantity"/>
         <obo:IAO_0000115>Energy is a physical quantity characterizing the ability of a system to do work.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1351/goldbook.E02101</obo:IAO_0000119>
         <rdfs:label>Energy</rdfs:label>
@@ -494,11 +494,11 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/Gamma-Surface -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/Gamma-Surface -->
 
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/Gamma-Surface">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/CalculatedProperty"/>
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/Energy"/>
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/Gamma-Surface">
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/CalculatedProperty"/>
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/Energy"/>
         <obo:IAO_0000115>The gamma-surface is the excess interlayer energy, γ, as a function of an imposed rigid-body translation, t, parallel to the interface.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1080/14786436808227500</obo:IAO_0000119>
         <rdfs:label>Gamma-Surface</rdfs:label>
@@ -506,10 +506,10 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary -->
 
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/PlanarDefect"/>
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary">
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/PlanarDefect"/>
         <obo:IAO_0000115>A grain boundary is a planar defect that separates two crystals (or grains) of the same material.</obo:IAO_0000115>
         <rdfs:label>Grain Boundary</rdfs:label>
         <skos:altLabel>GB</skos:altLabel>
@@ -517,11 +517,11 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundaryEnergy -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundaryEnergy -->
 
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundaryEnergy">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/CalculatedProperty"/>
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/Energy"/>
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundaryEnergy">
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/CalculatedProperty"/>
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/Energy"/>
         <obo:IAO_0000115>Grain boundary energy is the excess energy due to the presence of a grain boundary, with the perfect lattice (bulk) as the reference.</obo:IAO_0000115>
         <rdfs:comment>Usually expressed in units of energy per area.</rdfs:comment>
         <rdfs:label>Grain Boundary Energy</rdfs:label>
@@ -529,10 +529,10 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/LowAngleGrainBoundary -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/LowAngleGrainBoundary -->
 
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/LowAngleGrainBoundary">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/LowAngleGrainBoundary">
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
         <obo:IAO_0000115>A low angle grain boundary is a grain boundary with a misorientation angle lower than 15 degrees.</obo:IAO_0000115>
         <obo:IAO_0000119>ISBN 978-94-007-4968-9</obo:IAO_0000119>
         <rdfs:label>Low Angle Grain Boundary</rdfs:label>
@@ -541,10 +541,10 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/MixedGrainBoundary -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/MixedGrainBoundary -->
 
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/MixedGrainBoundary">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/MixedGrainBoundary">
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
         <obo:IAO_0000115>A mixed grain boundary is a grain boundary where the [uvw] rotation axis has perpendicular and parallel components with respect to the boundary plane.</obo:IAO_0000115>
         <obo:IAO_0000119>ISBN 978-94-007-4968-9</obo:IAO_0000119>
         <rdfs:label>Mixed Grain Boundary</rdfs:label>
@@ -552,15 +552,15 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/PhysicalQuantity -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/PhysicalQuantity -->
 
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/PhysicalQuantity"/>
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/PhysicalQuantity"/>
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/PlanarDefect -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/PlanarDefect -->
 
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/PlanarDefect">
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/PlanarDefect">
         <obo:IAO_0000115>A planar defect is a defect of the crystal structure across a plane. It is considered to be a two-dimensional defect, such as an internal interface or the surface.</obo:IAO_0000115>
         <rdfs:label>Planar Defect</rdfs:label>
         <skos:altLabel>Interface</skos:altLabel>
@@ -568,41 +568,41 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/StackingFault -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/StackingFault -->
 
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/StackingFault">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/PlanarDefect"/>
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/StackingFault">
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/PlanarDefect"/>
         <obo:IAO_0000115>A stacking fault is a planar defect created by an error (fault) in the order of the sequential layering of crystallographic planes.</obo:IAO_0000115>
         <rdfs:label>Stacking Fault</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/Surface -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/Surface -->
 
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/Surface">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/PlanarDefect"/>
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/Surface">
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/PlanarDefect"/>
         <obo:IAO_0000115>The free surface (or external surface) of the material is a planar defect where the surface atoms have no neighbors or cohesive bonds on the external side.</obo:IAO_0000115>
         <rdfs:label>Surface</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/SurfaceEnergy -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/SurfaceEnergy -->
 
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/SurfaceEnergy">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/CalculatedProperty"/>
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/Energy"/>
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/SurfaceEnergy">
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/CalculatedProperty"/>
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/Energy"/>
         <obo:IAO_0000115>Surface energy is the excess energy per unit area at a material&apos;s surface due to broken atomic bonds, measured relative to the bulk.</obo:IAO_0000115>
         <rdfs:label>Surface Energy</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/SymmetricalTiltGrainBoundary -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/SymmetricalTiltGrainBoundary -->
 
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/SymmetricalTiltGrainBoundary">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/TiltGrainBoundary"/>
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/SymmetricalTiltGrainBoundary">
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/TiltGrainBoundary"/>
         <obo:IAO_0000115>A symmetrical tilt grain boundary is a tilt grain boundary where the two grains are symmetric. The boundary plane has the same Miller indices in crystals I and II: {hkl}_1 = {hkl}_2.</obo:IAO_0000115>
         <obo:IAO_0000119>ISBN 978-94-007-4968-9</obo:IAO_0000119>
         <rdfs:label>Symmetrical Tilt Grain Boundary</rdfs:label>
@@ -610,10 +610,10 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/TiltGrainBoundary -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/TiltGrainBoundary -->
 
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/TiltGrainBoundary">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/TiltGrainBoundary">
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
         <obo:IAO_0000115>A tilt boundary is a grain boundary with a [uvw] rotation axis perpendicular to the boundary plane.</obo:IAO_0000115>
         <obo:IAO_0000119>ISBN 978-94-007-4968-9</obo:IAO_0000119>
         <rdfs:label>Tilt Grain Boundary</rdfs:label>
@@ -622,20 +622,20 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/TwinBoundary -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/TwinBoundary -->
 
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/TwinBoundary">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/PlanarDefect"/>
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/TwinBoundary">
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/PlanarDefect"/>
         <obo:IAO_0000115>A twin boundary is a planar defect that occurs between two separate crystals which are mirror images of each other. Both crystals have the same crystal structure.</obo:IAO_0000115>
         <rdfs:label>Twin Boundary</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/TwistGrainBoundary -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/TwistGrainBoundary -->
 
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/TwistGrainBoundary">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/TwistGrainBoundary">
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/GrainBoundary"/>
         <obo:IAO_0000115>A twist boundary is a grain boundary with a [uvw] rotation axis contained within the boundary plane.</obo:IAO_0000115>
         <obo:IAO_0000119>ISBN 978-94-007-4968-9</obo:IAO_0000119>
         <rdfs:label>Twist Grain Boundary</rdfs:label>
@@ -644,11 +644,11 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cdos/pldo/WorkOfSeparation -->
+    <!-- https://purls.helmholtz-metadaten.de/cdos/pldo/WorkOfSeparation -->
 
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cdos/pldo/WorkOfSeparation">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/CalculatedProperty"/>
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cdos/pldo/Energy"/>
+    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/WorkOfSeparation">
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/CalculatedProperty"/>
+        <rdfs:subClassOf rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/Energy"/>
         <obo:IAO_0000115>Work of separation is the energy required per unit area to separate a material into two free surfaces, overcoming atomic or intermolecular bonds at the interface.</obo:IAO_0000115>
         <rdfs:label>Work of Separation</rdfs:label>
     </owl:Class>
