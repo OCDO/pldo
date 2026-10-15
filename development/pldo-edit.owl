@@ -12,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/">
     <owl:Ontology rdf:about="https://purls.helmholtz-metadaten.de/cdos/pldo/">
-        <owl:versionIRI rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/v0.3.0"/>
+        <owl:versionIRI rdf:resource="https://purls.helmholtz-metadaten.de/cdos/pldo/v0.4.0"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-6776-1213"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-8933-0238"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-0698-4891"/>
@@ -22,8 +22,8 @@
         <terms:description>PLDO focuses on the description of planar defects in crystalline materials.</terms:description>
         <terms:title>Planar Defect Ontology (PLDO)</terms:title>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/OCDO/pldo</rdfs:seeAlso>
-        <owl:priorVersion rdf:resource="https://raw.githubusercontent.com/OCDO/pldo/refs/heads/main/previous-versions/pldo_v020.owl"/>
-        <owl:versionInfo>v0.3.0</owl:versionInfo>
+        <owl:priorVersion rdf:resource="https://raw.githubusercontent.com/OCDO/pldo/refs/heads/main/previous-versions/pldo_v030.owl"/>
+        <owl:versionInfo>v0.4.0</owl:versionInfo>
         <schema:citation>Abril Azocar Guzman and Stefan Sandfeld. (2025). Planar Defect Ontology.</schema:citation>
         <schema:creativeWorkStatus>Ontology Specification</schema:creativeWorkStatus>
         <schema:funder rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://ror.org/05qj6w324</schema:funder>

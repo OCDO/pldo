@@ -2,6 +2,18 @@
 
 Planar Lattice Defect Ontology (PLDO)
 
+## v0.4.0
+
+Adds chemical stacking faults and a descriptor for the atomic structure of grain boundaries.
+
+### New Classes (1)
+- `ChemicalStackingFault` — stacking fault that changes the type of interstitial site and so allows a local change in stoichiometry
+
+### New Datatype Properties (1)
+- `hasStructuralMotif` — free-text name of the structural motif of a grain boundary (e.g. kite, split kite)
+
+---
+
 ## v0.3.0
 
 Major expansion of stacking fault coverage. This release introduces a detailed hierarchy of stacking fault types and their associated energies, along with new geometric descriptors.
